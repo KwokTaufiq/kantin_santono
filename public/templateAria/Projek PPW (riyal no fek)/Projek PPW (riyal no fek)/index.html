@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Santono</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header--menu">
+        <div class="search--box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Cari Makanan"/>
+        </div>
+        <div class="menu--icons">
+          <i class="fa-solid fa-bowl-food"></i>
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>0</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- cover section-->
+<section class="cover">
+  <div class="cover--overlay">
+      <h1>Kantin Santono</h1>
+      <span class="slogan">Harga pas, Hati puas</span>
+  </div>
+</section>
+
+    <main>
+      <h2 class="section--heading">Kategori Menu</h2>
+      <div class="menu--list">
+        <div class="menu--item" onclick="filterKategori('Makanan')">
+          <img src="./image/makanan.jpeg" alt="Makanan"/>
+          <h5>Makanan</h5>
+        </div>
+        <div class="menu--item" onclick="filterKategori('Makanan Pendamping')">
+          <img src="./image/pendamping.jpeg" alt="Makanan Pendamping"/>
+          <h5>Makanan Pendamping</h5>
+        </div>
+        <div class="menu--item" onclick="filterKategori('Minuman')">
+          <img src="./image/minuman.jpg" alt="Minuman"/>
+          <h5>Minuman</h5>
+        </div>
+        <div class="menu--item" onclick="filterKategori('Desert')">
+          <img src="./image/dessert.jpg" alt="Desert"/>
+          <h5>Dessert</h5>
+        </div>
+        <div class="menu--item" onclick="filterKategori('Aneka Jus')">
+          <img src="./image/jus.jpg" alt="Aneka Jus"/>
+          <h5>Aneka Jus</h5>
+        </div>
+        <div class="menu--item" onclick="filterKategori('semua')">
+          <img src="./image/semua.png" alt="Kembali"/>
+          <h5>Kembali</h5>
+        </div>
+      </div>
+
+      <!-- card item-->
+      <div class="divider"></div>
+      <h2 class="section--heading">Menu</h2>
+      <div class="card--list">
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/Mie Ayam.jpeg" alt="">
+          <h4 class="card--title">Mie Ayam Komplit</h4>
+          <div class="card--price">
+            <span class="price">Rp.20.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/putih.jpg" alt="">
+          <h4 class="card--title">Nasi Putih</h4>
+          <div class="card--price">
+            <span class="price">Rp.5.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/uduk.jpg" alt="">
+          <h4 class="card--title">Nasi Uduk</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/mie ayam.jpg" alt="">
+          <h4 class="card--title">Mie Ayam</h4>
+          <div class="card--price">
+            <span class="price">Rp.15.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/mieayambaso.jpg" alt="">
+          <h4 class="card--title">Mie Ayam Baso</h4>
+          <div class="card--price">
+            <span class="price">Rp.17.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/rendang.jpg" alt="">
+          <h4 class="card--title">Rendang</h4>
+          <div class="card--price">
+            <span class="price">Rp.8.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/mie-goreng.jpg" alt="">
+          <h4 class="card--title">Mie Goreng</h4>
+          <div class="card--price">
+            <span class="price">Rp.15.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/asamanis.jpg" alt="">
+          <h4 class="card--title">Udang Asam Manis</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/ayam.jpg" alt="">
+          <h4 class="card--title">Ayam Goreng</h4>
+          <div class="card--price">
+            <span class="price">Rp.8.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/bakso.jpeg" alt="">
+          <h4 class="card--title">bakso</h4>
+          <div class="card--price">
+            <span class="price">Rp.20.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/baso.jpg" alt="">
+          <h4 class="card--title">Bakso Bakar</h4>
+          <div class="card--price">
+            <span class="price">Rp.3.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/dimsum.jpg" alt="">
+          <h4 class="card--title">Dimsum</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/geprek.jpg" alt="">
+          <h4 class="card--title">Ayam Geprek</h4>
+          <div class="card--price">
+            <span class="price">Rp.13.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan">
+          <img src="./image--makanan/goreng.jpg" alt="">
+          <h4 class="card--title">Nasi Goreng</h4>
+          <div class="card--price">
+            <span class="price">Rp.15.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/gyoza.jpg" alt="">
+          <h4 class="card--title">Gyoza</h4>
+          <div class="card--price">
+            <span class="price">Rp.15.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/kentang.jpg" alt="">
+          <h4 class="card--title">Kentang Goreng</h4>
+          <div class="card--price">
+            <span class="price">Rp.17.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/naget.jpg" alt="">
+          <h4 class="card--title">Naget Ayam</h4>
+          <div class="card--price">
+            <span class="price">Rp.20.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Desert">
+          <img src="./image--makanan/puding.jpg" alt="">
+          <h4 class="card--title">Puding Karamel</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Makanan Pendamping">
+          <img src="./image--makanan/sosis.jpg" alt="">
+          <h4 class="card--title">Sosis Bakar</h4>
+          <div class="card--price">
+            <span class="price">Rp.5.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/air.jpg" alt="">
+          <h4 class="card--title">Le Mineral 500Ml</h4>
+          <div class="card--price">
+            <span class="price">Rp.5.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/akuabesar.jpg" alt="">
+          <h4 class="card--title">Aqua 600ml</h4>
+          <div class="card--price">
+            <span class="price">Rp.5.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/akuakecil.jpg" alt="">
+          <h4 class="card--title">Aqua 330ml</h4>
+          <div class="card--price">
+            <span class="price">Rp.3.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Aneka Jus">
+          <img src="./image--makanan/alpukat.jpg" alt="">
+          <h4 class="card--title">Jus Alpukat</h4>
+          <div class="card--price">
+            <span class="price">Rp.12.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/coklat.jpg" alt="">
+          <h4 class="card--title">Es Coklat</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/cola.jpg" alt="">
+          <h4 class="card--title">Coca-cola 500ml</h4>
+          <div class="card--price">
+            <span class="price">Rp.7.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/eskopi.jpg" alt="">
+          <h4 class="card--title">Es Kopi</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Aneka Jus">
+          <img src="./image--makanan/jeruk.jpg" alt="">
+          <h4 class="card--title">Jus Jeruk</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/kopipanas.jpg" alt="">
+          <h4 class="card--title">Kopi Panas</h4>
+          <div class="card--price">
+            <span class="price">Rp.7.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Aneka Jus">
+          <img src="./image--makanan/mangga.jpg" alt="">
+          <h4 class="card--title">Jus mangga</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/pucuk (2).jpg" alt="">
+          <h4 class="card--title">Teh Pucuk</h4>
+          <div class="card--price">
+            <span class="price">Rp.5.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Aneka Jus">
+          <img src="./image--makanan/semangka.jpg" alt="">
+          <h4 class="card--title">Jus Semangka</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Aneka Jus">
+          <img src="./image--makanan/sirsak.jpg" alt="">
+          <h4 class="card--title">Jus Sirsak</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Aneka Jus">
+          <img src="./image--makanan/stroberi.jpg" alt="">
+          <h4 class="card--title">Jus stroberi</h4>
+          <div class="card--price">
+            <span class="price">Rp.5.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Minuman">
+          <img src="./image--makanan/teh.jpg" alt="">
+          <h4 class="card--title">Es Teh Manis</h4>
+          <div class="card--price">
+            <span class="price">Rp.5.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+        <div class="card" data-kategori="Aneka Jus">
+          <img src="./image--makanan/wortel.jpg" alt="">
+          <h4 class="card--title">Jus Wortel</h4>
+          <div class="card--price">
+            <span class="price">Rp.10.000</span>
+          </div>
+          <div class="add-to-cart">Tambahkan Menu</div>
+        </div>
+      </div>
+
+      <!--- cart sidebar dection--->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar--close">
+          <i class="fa-solid fa-close"></i>
+        </div>
+        <div class="cart--menu">
+          <h1>Pesanan Saya</h1>
+          <div class="cart-items"></div>
+        </div>
+
+        <div class="sidebar--footer">
+          <div class="total--amount">
+            <h5>Total</h5>
+            <div class="cart--total"></div>
+          </div>
+          <button class="checkout-btn">LANJUT KE PEMBAYARAN</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="filter.js"></script>
+  </body>
+</html>
